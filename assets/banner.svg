@@ -1,0 +1,101 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07130d"/>
+      <stop offset="55%" stop-color="#0c2418"/>
+      <stop offset="100%" stop-color="#08160f"/>
+    </linearGradient>
+    <linearGradient id="pitch" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#134d2c"/>
+      <stop offset="100%" stop-color="#0c2a1a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2be6a6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2be6a6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe6a0"/>
+      <stop offset="100%" stop-color="#d69b2b"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7d774"/>
+      <stop offset="100%" stop-color="#b8842b"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- pitch panel on the right -->
+  <path d="M 700 0 L 1200 0 L 1200 360 L 620 360 Z" fill="url(#pitch)" opacity="0.9"/>
+  <circle cx="950" cy="180" r="220" fill="url(#glow)"/>
+
+  <!-- pitch lines -->
+  <g stroke="#4fd68c" stroke-width="2" opacity="0.35" fill="none">
+    <line x1="900" y1="0" x2="900" y2="360"/>
+    <circle cx="900" cy="180" r="70"/>
+    <path d="M 1200 60 L 1050 60 L 1050 300 L 1200 300"/>
+    <line x1="700" y1="0" x2="700" y2="360"/>
+  </g>
+
+  <!-- circuit / bot automation nodes -->
+  <g stroke="#2be6a6" stroke-width="1.6" opacity="0.55" fill="none">
+    <path d="M 760 60 L 820 60 L 820 110 L 890 110"/>
+    <path d="M 780 260 L 840 260 L 840 210 L 910 210"/>
+    <path d="M 700 150 L 750 150 L 750 190 L 800 190"/>
+  </g>
+  <g fill="#2be6a6">
+    <circle cx="760" cy="60" r="5"/>
+    <circle cx="890" cy="110" r="5"/>
+    <circle cx="780" cy="260" r="5"/>
+    <circle cx="910" cy="210" r="5"/>
+    <circle cx="700" cy="150" r="4"/>
+    <circle cx="800" cy="190" r="4"/>
+  </g>
+
+  <!-- stylized coin stack (transfer market currency) -->
+  <g>
+    <ellipse cx="1030" cy="255" rx="52" ry="16" fill="url(#coin)" stroke="#7a5518" stroke-width="1.5"/>
+    <ellipse cx="1030" cy="238" rx="52" ry="16" fill="url(#coin)" stroke="#7a5518" stroke-width="1.5"/>
+    <ellipse cx="1030" cy="221" rx="52" ry="16" fill="url(#coin)" stroke="#7a5518" stroke-width="1.5"/>
+    <text x="1030" y="227" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#5c3d10" text-anchor="middle">FC</text>
+  </g>
+
+  <!-- crosshair / autobid target -->
+  <g stroke="#f2c14e" stroke-width="2" fill="none" opacity="0.85">
+    <circle cx="1005" cy="95" r="34"/>
+    <circle cx="1005" cy="95" r="6" fill="#f2c14e" stroke="none"/>
+    <line x1="1005" y1="45" x2="1005" y2="65"/>
+    <line x1="1005" y1="125" x2="1005" y2="145"/>
+    <line x1="955" y1="95" x2="975" y2="95"/>
+    <line x1="1035" y1="95" x2="1055" y2="95"/>
+  </g>
+
+  <!-- ball outline accent -->
+  <g stroke="#eaf5ec" stroke-width="1.4" fill="none" opacity="0.5">
+    <circle cx="1120" cy="310" r="26"/>
+    <path d="M 1100 300 L 1120 296 L 1140 300 L 1132 320 L 1108 320 Z"/>
+  </g>
+
+  <!-- left accent bar -->
+  <rect x="0" y="0" width="10" height="360" fill="url(#gold)"/>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="800" fill="#f2f7f2">
+    <tspan x="60" y="150" textLength="620" lengthAdjust="spacingAndGlyphs">FIFA FC 25</tspan>
+    <tspan x="60" y="230" textLength="700" lengthAdjust="spacingAndGlyphs" fill="url(#gold)">Autobuyer Bot</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#bfe7cf" textLength="1000" lengthAdjust="spacingAndGlyphs">
+    Automates transfer market bidding and buying via a pluggable module
+  </text>
+  <text x="60" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#bfe7cf" textLength="440" lengthAdjust="spacingAndGlyphs">
+    for the FIFA FC 25 ecosystem
+  </text>
+
+  <!-- subtle speed/data lines under text -->
+  <g stroke="#2be6a6" stroke-width="2" opacity="0.4">
+    <line x1="60" y1="60" x2="180" y2="60"/>
+    <line x1="60" y1="70" x2="130" y2="70"/>
+  </g>
+</svg>
